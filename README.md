@@ -1,3 +1,3 @@
 ### Development Links
 
-[Java](dev-log/source/java.md)
+[Java](dev-log/blob/master/source/java.md)
