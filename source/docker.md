@@ -12,8 +12,14 @@ This is a “known” bug. Everyone can access in this port, except for containe
 
 **Resolution:**
 
+Issue is bigger than expected - Full issue is explained here: https://github.com/moby/moby/issues/16137#issuecomment-271615192
 ```
+nmcli connection modify docker0 connection.zone trusted
+systemctl stop NetworkManager.service
 firewall-cmd --permanent --zone=trusted --change-interface=docker0
-firewall-cmd --permanent --zone=trusted --add-port=4243/tcp
-firewall-cmd --reload
+systemctl start NetworkManager.service
+nmcli connection modify docker0 connection.zone trusted
+systemctl restart docker.service
 ```
+
+
