@@ -1,6 +1,7 @@
 ### Docker 
 
-Docker container restart policy 
+Docker container restart policy:
+
 docker update --restart=always <container>
 
 ## Issue #01
