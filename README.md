@@ -22,3 +22,7 @@ sudo apt-get update && apt-get install lxc
 
 sudo apt-get install lxc-templates
 
+--
+
+sudo lxc-create -t ubuntu -n db1
+
