@@ -19,5 +19,6 @@
 ### lxc install
 
 sudo apt-get update && apt-get install lxc
+
 sudo apt-get install lxc-templates
 
