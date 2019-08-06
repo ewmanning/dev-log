@@ -29,3 +29,8 @@ sudo lxc-create -t ubuntu -n db1
 --
 
 lxc-start -n db1 -d
+
+--
+
+ less /etc/ansible/ansible.cfg
+ 
