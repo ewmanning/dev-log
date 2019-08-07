@@ -34,3 +34,9 @@ lxc-start -n db1 -d
 
  less /etc/ansible/ansible.cfg
  
+ --
+ 
+ ssh-agent /bin/bash
+ ssh-add ~/.ssh/id_rsa
+ 
+ 
