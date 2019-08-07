@@ -37,6 +37,7 @@ lxc-start -n db1 -d
  --
  
  ssh-agent /bin/bash
+ 
  ssh-add ~/.ssh/id_rsa
  
  
